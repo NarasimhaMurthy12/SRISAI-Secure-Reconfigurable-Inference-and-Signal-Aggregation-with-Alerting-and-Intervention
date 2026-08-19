@@ -1,0 +1,10 @@
+# Programs/Source/compare.mpc
+A = sint.get_input_from(0)
+t = sint.get_input_from(0)
+r = sint.get_input_from(1)
+
+b = (A - r) > t
+print_ln("A : %s",A.reveal())
+print_ln("t : %s ",t.reveal())
+print_ln("r : %s ",r.reveal())
+print_ln("Result of (A - r) > t is: %s", b.reveal())
