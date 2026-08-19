@@ -12,7 +12,7 @@ from network import recv_msg, recv_obj, send_msg
 
 os.environ["HF_HUB_ENABLE_HF_XET"] = "0"
 
-HOST = '10.110.30.98'
+HOST = '127.0.0.1'
 SERVER_PORT = 5001
 MP_SPDZ_DIR = "."
 CLIENT_CACHE_DIR = "client_cache"
