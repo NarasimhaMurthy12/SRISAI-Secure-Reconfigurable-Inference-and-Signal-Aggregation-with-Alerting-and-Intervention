@@ -136,7 +136,7 @@ def run_server():
 
         print(f"[Server] Triggering Garbled Circuit (Party 0)...")
         print(f"[Server] --- MP-SPDZ OUTPUT START ---")
-        cmd = ["./yao-party.x", "-p", "0", "-pn", "6010","-h","10.110.30.98", "compare"]
+        cmd = ["./yao-party.x", "-p", "0", "-pn", "6010","-h","127.0.0.1", "compare"]
         gc_result = subprocess.run(cmd, cwd=MP_SPDZ_DIR, capture_output=True, text=True)
         print(gc_result.stdout)
         if gc_result.stderr:
